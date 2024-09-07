@@ -1,1 +1,0 @@
-import{c as t,j as e}from"./index-BvZl6n-p.js";const s=()=>e.jsx("div",{className:"h-full flex items-center justify-center",children:e.jsx("h3",{className:"text-3xl font-bold",children:"Home Page"})}),n=t("/")({component:s});export{n as Route};
