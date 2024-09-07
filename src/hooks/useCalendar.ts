@@ -5,7 +5,7 @@ import { initialEvents } from "../mockData"
 type UseCalendarReturnType = {
   events: IEvent[]
   selectedEvent: IEvent | null
-	isCreating: boolean
+  isCreating: boolean
   handleEventClick: (event: IEvent) => void
   handleClosePopup: () => void
   handleSave: (updatedEvent: IEvent) => void
@@ -30,6 +30,7 @@ const useCalendar = (): UseCalendarReturnType => {
   const handleSave = (updatedEvent: IEvent) => {
     if (isCreating) {
       setEvents([...events, updatedEvent])
+      setIsCreating(false)
     } else {
       setEvents(events.map((event) => (event.id === updatedEvent.id ? updatedEvent : event)))
     }
@@ -71,7 +72,7 @@ const useCalendar = (): UseCalendarReturnType => {
     eventPropGetter,
     handleCreateEvent,
     handleDeleteEvent,
-		isCreating
+    isCreating,
   }
 }
 

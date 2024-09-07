@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://0RomanShevchuk0.github.io/join.to.it-test-task",
+  "homepage": "https://0RomanShevchuk0.github.io/join.to.it-test-task/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
